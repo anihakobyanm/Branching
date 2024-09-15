@@ -35,30 +35,41 @@ public class Branching {
                 System.out.println("User entered wrong operator");
         }
 //N4
-        String semesterOne = "Fall";
-        String semesterSecond = "Spring";
-        String programOne = "Introduction to Computer Science";
-        String programTwo = "English Literature";
 
+        String semester = "Fall";
+        String program = "CS";
 
-        switch (semesterOne) {
+        String course = "Output";
+
+        switch (semester) {
             case "Fall":
-                System.out.println("The course will be 'Object-Oriented Programming' for the " + programOne + " program");
-
-                switch (semesterSecond) {
-                    case "Spring":
-
-                        System.out.println("The course will be 'Introduction to Journalism' for the " + programTwo + " program");
+                switch (program) {
+                    case "CS":
+                        course = "Introduction to Computer Science";
                         break;
-
+                    case "EC":
+                        course = "English Literature";
+                        break;
+                    default:
+                        course = "Please choose the existing program";
+                }
+                break;
+            case "Spring":
+                switch (program) {
+                    case "CS":
+                        course = "Object-Oriented Programming";
+                        break;
+                    case "EC":
+                        course = "Introduction to Journalism";
+                        break;
+                    default:
+                        course = "Please choose the existing program";
                 }
                 break;
             default:
-                System.out.println("Default");
+                course = "Please choose the existing semester";
         }
 
-
+        System.out.println("Required course is : " + course);
     }
 }
-
-
