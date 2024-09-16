@@ -1,7 +1,7 @@
 public class Looping {
     public static void main(String[] args) {
         //1
-        long input = 5656565;
+        long input = 123456;
         long size = 0;
 
         for (long i = input; i != 0; i = i / 10) {
@@ -82,14 +82,7 @@ public class Looping {
 
 
         //7
-        int z = 10;
-        double ln2 = 0.0;
 
-        for (int i = 1; i <= z; i++) {
-            ln2 += (i % 2 == 0) ? -1.0 / i : 1.0 / i;
-        }
-
-        System.out.println(ln2);
 
         //8
         int p = 5;

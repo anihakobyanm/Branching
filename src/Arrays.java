@@ -44,21 +44,6 @@ public class Arrays {
         }
 //N3
 
-        int[] numbers = {2, 5, 2, 3, 3, 6};
-        int sumOfNumbers = 10;
-
-        for (int i = 0; i < numbers.length - 3; i++) {
-            for (int j = i + 1; j < numbers.length - 2; j++) {
-                for (int k = j + 1; k < numbers.length - 1; k++) {
-                    for (int l = k + 1; l < numbers.length; l++) {
-
-                        if (numbers[i] + numbers[j] + numbers[k] + numbers[l] == sumOfNumbers) {
-                            System.out.println("\n" + "Valid combination: " + numbers[i] + ", " + numbers[j] + ", " + numbers[k] + ", " + numbers[l]);
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 

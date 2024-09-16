@@ -1,7 +1,7 @@
 public class Branching {
     public static void main(String[] args) {
 //N1
-        int a = 5, b = 4, c = 0;
+        int a = 601, b = -1, c = -45;
 
         System.out.println((a < b && b < c) ? "increasing" : (a > b && b > c) ? "decreasing" : "neighter");
 
